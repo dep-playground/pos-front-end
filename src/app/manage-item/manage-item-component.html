@@ -1,0 +1,226 @@
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6 col-12">
+                    <h1 class="m-0 text-dark">Manage Items</h1>
+                </div><!-- /.col -->
+                <div class="col-sm-6 col-12 mt-sm-0 mt-2">
+                    <ol class="breadcrumb float-sm-right">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary mr-2" data-toggle="modal" data-target="#exampleModal">
+                <span class="icon pr-2">
+                  <i class="fas fa-plus-circle"></i>
+                </span>
+                            New Item
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">New Item</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputitemname4">Item Name</label>
+                                                    <input type="text" class="form-control" id="inputitemname4">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputitemcategory4">Item Category</label>
+                                                    <input type="text" class="form-control" id="inputitemcategory4">
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputunitprice">Unit Price</label>
+                                                    <input type="text" class="form-control" id="inputunitprice" placeholder="100.00">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputquantity">Quantity</label>
+                                                    <input type="text" class="form-control" id="inputquantity" placeholder="100">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputGroupFile01">Item Photo</label>
+                                                <div class="custom-file">
+                                                    <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+                                                    <label class="form-control custom-file-label" for="inputGroupFile01">Choose Item Photo</label>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Save Item</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-danger mr-2">
+                <span class="icon pr-2">
+                  <i class="fas fa-trash"></i>
+                </span>
+                            Delete Item
+                        </button>
+                    </ol>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <section class="content">
+        <!-- Default box -->
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">
+                    Items<span class="badge badge-info ml-2">2</span>
+                </h3>
+
+                <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                        <i class="fas fa-minus"></i></button>
+                </div>
+            </div>
+            <div class="card-body">
+                <table class="table projects table-head-fixed table-hover bg-white">
+                    <thead>
+                    <tr>
+                        <th>
+                            <button type="button" class="btn btn-default btn-sm checkbox-toggle"><i class="far fa-square"></i>
+                            </button>
+                        </th>
+                        <th>
+                            Item ID
+                        </th>
+                        <th>
+                            Item Name
+                        </th>
+                        <th>
+                            Item Category
+                        </th>
+                        <th>
+                            Unit Price
+                        </th>
+                        <th>
+                            QTY
+                        </th>
+                        <th>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div class="icheck-primary">
+                                <input type="checkbox" value="" id="check1">
+                                <label for="check1"></label>
+                            </div>
+                        </td>
+                        <td>
+                            1
+                        </td>
+                        <td>
+                            <a>
+                                Laptop
+                            </a>
+                            <br/>
+                            <small>
+                                HP
+                            </small>
+                        </td>
+                        <td>
+                            <a>
+                                Electronic
+                            </a>
+                        </td>
+                        <td>
+                            <a>
+                                150000.00
+                            </a>
+                        </td>
+                        <td>
+                            100
+                        </td>
+                        <td class="project-actions text-right">
+                            <a class="btn btn-primary btn-sm" href="#">
+                                <i class="fas fa-folder">
+                                </i>
+                                View
+                            </a>
+                            <a class="btn btn-info btn-sm" href="#">
+                                <i class="fas fa-pencil-alt">
+                                </i>
+                                Edit
+                            </a>
+                            <a class="btn btn-danger btn-sm" href="#">
+                                <i class="fas fa-trash">
+                                </i>
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="icheck-primary">
+                                <input type="checkbox" value="" id="check2">
+                                <label for="check2"></label>
+                            </div>
+                        </td>
+                        <td>
+                            2
+                        </td>
+                        <td>
+                            <a>
+                                Mouse
+                            </a>
+                            <br/>
+                            <small>
+                                Logitec
+                            </small>
+                        </td>
+                        <td>
+                            <a>
+                                Electronic
+                            </a>
+                        </td>
+                        <td>
+                            <a>
+                                1200.00
+                            </a>
+                        </td>
+                        <td>
+                            100
+                        </td>
+                        <td class="project-actions text-right">
+                            <a class="btn btn-primary btn-sm" href="#">
+                                <i class="fas fa-folder">
+                                </i>
+                                View
+                            </a>
+                            <a class="btn btn-info btn-sm" href="#">
+                                <i class="fas fa-pencil-alt">
+                                </i>
+                                Edit
+                            </a>
+                            <a class="btn btn-danger btn-sm" href="#">
+                                <i class="fas fa-trash">
+                                </i>
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- /.card-body -->
+        </div>
+        <!-- /.card -->
+
+    </section>
+</div>
