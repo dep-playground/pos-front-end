@@ -9,6 +9,11 @@
       width: 10%;
       text-align: center;
     }
+
+    #tbl-customers th:nth-child(4), #tbl-customers td:nth-child(4){
+        width: 100px;
+        text-align: center;
+      }
   
     #tbl-customers th:last-child, #tbl-customers td:last-child{
       width: 10%;
