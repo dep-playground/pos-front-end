@@ -45,7 +45,7 @@ async function loadAllCustomers() {
         "info": false,
         "searching": false,
         "lengthChange": false,
-        "pageLength": 5,
+        "pageLength": 4,
         "ordering": false
     });
     //dataTable.page(Math.ceil(customers.length / 5)-1).draw(false);

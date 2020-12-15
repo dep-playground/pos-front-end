@@ -1,3 +1,8 @@
+import '../../../node_modules/admin-lte/plugins/datatables/jquery.dataTables.min.js';
+import '../../../node_modules/admin-lte/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js';
+import '../../../node_modules/admin-lte/plugins/datatables-responsive/js/dataTables.responsive.min.js';
+import '../../../node_modules/admin-lte/plugins/datatables-responsive/js/responsive.bootstrap4.min.js';
+
 import { Item, upItem } from '../model/item';
 import { deleteItem, getAllItems, saveItem, updateItem } from '../service/item.service';
 import manageItem from './manage-item-component.html';
@@ -40,7 +45,7 @@ async function loadAllItems() {
         "info": false,
         "searching": false,
         "lengthChange": false,
-        "pageLength": 5,
+        "pageLength": 4,
         "ordering": false
     });
     //dataTable.page(Math.ceil(customers.length / 5)-1).draw(false);
