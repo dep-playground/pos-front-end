@@ -9,7 +9,7 @@
                 <div class="col-sm-6 col-12 mt-sm-0 mt-2">
                     <ol class="breadcrumb float-sm-right">
                         <!-- Button trigger modal -->
-                        <button type="button" class="btn btn-primary mr-2" data-toggle="modal" data-target="#exampleModal">
+                        <button type="button" class="btn btn-primary mr-2" data-toggle="modal" data-target="#cusexampleModal">
                 <span class="icon pr-2">
                   <i class="fas fa-plus-circle"></i>
                 </span>
@@ -29,21 +29,17 @@
                                         <form>
                                             <div class="form-row">
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputfirstname4">First Name</label>
-                                                    <input type="email" class="form-control" id="inputfirstname4">
+                                                    <label for="txt-id">Customer ID</label>
+                                                    <input type="email" class="form-control" id="txt-id">
                                                 </div>
                                                 <div class="form-group col-md-6">
-                                                    <label for="inputlastname4">Last Name</label>
-                                                    <input type="password" class="form-control" id="inputlastname4">
+                                                    <label for="txt-name">Customer Name</label>
+                                                    <input type="password" class="form-control" id="txt-name">
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label for="inputAddress">Address</label>
-                                                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="inputAddress2">Address 2</label>
-                                                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                                <label for="txt-address">Address</label>
+                                                <input type="text" class="form-control" id="txt-address" placeholder="1234 Main St">
                                             </div>
                                             <div class="form-group">
                                                 <label for="cusinputGroupFile01">Profile Picture</label>
@@ -52,18 +48,12 @@
                                                     <label class="form-control custom-file-label" for="cusinputGroupFile01">Choose Profile Photo</label>
                                                 </div>
                                             </div>
-                                            <button type="submit" class="btn btn-primary">Save Customer</button>
+                                            <button id="btn-save-customer" type="button" class="btn btn-primary">Save Customer</button>
                                         </form>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <button type="button" class="btn btn-danger mr-2">
-                <span class="icon pr-2">
-                  <i class="fas fa-trash"></i>
-                </span>
-                            Delete Customers
-                        </button>
                     </ol>
                 </div><!-- /.col -->
             </div><!-- /.row -->
@@ -77,7 +67,7 @@
         <div class="card">
             <div class="card-header">
                 <h3 class="card-title">
-                    Customers<span class="badge badge-info ml-2">2</span>
+                    Customers<span class="badge badge-info ml-2">0</span>
                 </h3>
 
                 <div class="card-tools">
@@ -86,132 +76,22 @@
                 </div>
             </div>
             <div class="card-body">
-                <table class="table projects table-head-fixed table-hover bg-white">
-                    <thead>
-                    <tr>
-                        <th>
-                            <button type="button" class="btn btn-default btn-sm checkbox-toggle"><i class="far fa-square"></i>
-                            </button>
-                        </th>
-                        <th>
-                            Customer ID
-                        </th>
-                        <th>
-                            Customer Name
-                        </th>
-                        <th>
-                            Customer Address
-                        </th>
-                        <th>
-                            Display Photo
-                        </th>
-                        <th>
-                        </th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>
-                            <div class="icheck-primary">
-                                <input type="checkbox" value="" id="cuscheck1">
-                                <label for="cuscheck1"></label>
-                            </div>
-                        </td>
-                        <td>
-                            1
-                        </td>
-                        <td>
-                            <a>
-                                Lucky
-                            </a>
-                            <br/>
-                            <small>
-                                Prabath
-                            </small>
-                        </td>
-                        <td>
-                            <a>
-                                Galle
-                            </a>
-                        </td>
-                        <td>
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <img id="avatar-1" src="../../assets/avatar.png" alt="Avatar" class="table-avatar">
-                                </li>
-                            </ul>
-                        </td>
-                        <td class="project-actions text-right">
-                            <a class="btn btn-primary btn-sm" href="#">
-                                <i class="fas fa-folder">
-                                </i>
-                                View
-                            </a>
-                            <a class="btn btn-info btn-sm" href="#">
-                                <i class="fas fa-pencil-alt">
-                                </i>
-                                Edit
-                            </a>
-                            <a class="btn btn-danger btn-sm" href="#">
-                                <i class="fas fa-trash">
-                                </i>
-                                Delete
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="icheck-primary">
-                                <input type="checkbox" value="" id="cuscheck2">
-                                <label for="cuscheck2"></label>
-                            </div>
-                        </td>
-                        <td>
-                            2
-                        </td>
-                        <td>
-                            <a>
-                                Danuka
-                            </a>
-                            <br/>
-                            <small>
-                                Ashan
-                            </small>
-                        </td>
-                        <td>
-                            <a>
-                                Hambanthota
-                            </a>
-                        </td>
-                        <td>
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <img id="avatar-2" src="../../assets/avatar04.png" alt="Avatar" class="table-avatar">
-                                </li>
-                            </ul>
-                        </td>
-                        <td class="project-actions text-right">
-                            <a class="btn btn-primary btn-sm" href="#">
-                                <i class="fas fa-folder">
-                                </i>
-                                View
-                            </a>
-                            <a class="btn btn-info btn-sm" href="#">
-                                <i class="fas fa-pencil-alt">
-                                </i>
-                                Edit
-                            </a>
-                            <a class="btn btn-danger btn-sm" href="#">
-                                <i class="fas fa-trash">
-                                </i>
-                                Delete
-                            </a>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
+                <div class="col-12 col-lg-12">
+                  
+                    <table id="tbl-customers" class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Address</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                       
+                </div>
             </div>
-            <!-- /.card-body -->
         </div>
         <!-- /.card -->
 

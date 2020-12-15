@@ -1,1 +1,27 @@
+/**
+ * @author : Suchira Liyanage <suchiraliyanage94@gmail.com>
+ * @since : 14/12/2020
+**/
 
+#manage-customers {
+
+    #tbl-customers th:first-child, #tbl-customers td:first-child{
+      width: 25%;
+      text-align: center;
+    }
+  
+    #tbl-customers th:last-child, #tbl-customers td:last-child{
+      width: 25%;
+      text-align: center;
+    }
+  
+    .card{
+      height: 100%;
+    }
+  
+    .pagination{
+      justify-content: flex-end;
+    }
+  
+  }
+  
