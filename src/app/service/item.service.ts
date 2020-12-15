@@ -24,27 +24,6 @@ export function getAllItems(): Promise<Array<Item>> {
         }else{
             resolve(items);
         }
-    
-
-        // //(1) Initiate the XMLHttpRequest
-        // let http = new XMLHttpRequest();
-
-        // //(2) Setting up the callback function
-        // http.onreadystatechange = function(){
-        //     if(http.readyState === 4){
-        //         items = JSON.parse(http.responseText);
-        //         resolve(items);
-        //     }
-            
-        // }
-
-        // //(3) Let's open the request
-        // http.open('GET', 'http://localhost:8080/pos/items',true);
-
-        // //(4) If we have to set headers
-
-        // //(5) send
-        // http.send();
 
     });
 }
@@ -90,20 +69,6 @@ export function updateItem(item: upItem,code:string): Promise<void>{
 
 export function deleteItem(code: string): Promise<void>{
     return new Promise((resolve, reject)=>{
-        
-/*         let http = new XMLHttpRequest();
-        http.onreadystatechange = () => {
-            if (http.readyState == 4) {
-                if (http.status == 204){
-                    customers.splice(customers.findIndex((elm)=>elm.id===id),1);
-                    resolve();
-                }else{
-                    reject();    
-                } 
-            }
-        };
-        http.open('DELETE', `http://localhost:8080/pos/customers?id=${id}`, true);
-        http.send(); */
 
         $.ajax({
             method: "DELETE",
