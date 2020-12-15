@@ -6,7 +6,7 @@ import '../../../node_modules/admin-lte/plugins/datatables/jquery.dataTables.min
 import '../../../node_modules/admin-lte/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js';
 import '../../../node_modules/admin-lte/plugins/datatables-responsive/js/dataTables.responsive.min.js';
 import '../../../node_modules/admin-lte/plugins/datatables-responsive/js/responsive.bootstrap4.min.js';
-import { getAllCustomers } from '../service/customer.service';
+import { deleteCustomer, getAllCustomers } from '../service/customer.service';
 
 $("app-manage-customer").replaceWith('<div id="manage-customer" class="d-none">' + manageCustomer + '</div>');
 var html = '<style>' + style + '</style>';
@@ -49,6 +49,17 @@ async function loadAllCustomers() {
     $("#cus-count").text(customers.length)
 
 }
+
+$("#tbl-customers tbody").on('click', 'tr .fas', async (event: Event)=>{
+    let id = ($(event.target as any).parents("tr").find("td:first-child").text());
+    try{
+        await deleteCustomer(id);
+        alert("Customer has been deleted successfully");
+        loadAllCustomers();
+    }catch(error){
+        alert("Failed to delete the customer");
+    }
+});
 
 loadAllCustomers();
 
