@@ -1,6 +1,6 @@
-import '../../node_modules/admin-lte/plugins/bootstrap/js/bootstrap.bundle.min.js';
-import '../../node_modules/admin-lte/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js';
-import '../../node_modules/admin-lte/dist/js/adminlte.js';
+import 'admin-lte/plugins/bootstrap/js/bootstrap.bundle.min';
+import 'admin-lte/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min';
+import 'admin-lte/dist/js/adminlte';
 import app from  './app.component.html';
 
 import style from './app.component.scss';

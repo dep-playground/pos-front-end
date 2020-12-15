@@ -1,7 +1,8 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const webpack = require('webpack');
 
 module.exports = {
-    entry: './src/main.js',
+    entry: './src/main.ts',
     output:{
         filename: 'main.bundle.js',
         path: __dirname +  '/dist',
@@ -10,6 +11,11 @@ module.exports = {
     },
     module: {
         rules: [
+            {
+                test: /[.]ts$/,
+                use: ['ts-loader'],
+                exclude: /node_modules/
+            },
             {
                 test: /[.]html$/,
                 use: ['html-loader']
@@ -27,6 +33,13 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './src/index.html'
-        })
-    ]
+        }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery'
+          }),
+    ],
+    resolve: {
+        extensions: ['.ts','.js']
+    }
 }

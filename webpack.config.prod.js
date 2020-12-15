@@ -5,8 +5,8 @@ const superConfig = require('./webpack.config');
 
 module.exports = merge(superConfig ,{
     output:{
-        filename: 'main.[contenthash].bundle.js',
-        path: __dirname +  '/docs',
+        filename: 'main.[contenthash].bundle.min.js',
+        path: __dirname +  '/dist',
     },
     plugins: [
         new MiniCssExtractPlugin({
